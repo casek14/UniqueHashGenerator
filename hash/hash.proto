@@ -1,0 +1,14 @@
+syntax="proto3";
+package hash;
+
+service Hash{
+    rpc GetHash(HashRequest) returns(HashResponse);
+}
+
+message HashRequest{
+
+}
+
+message HashResponse{
+    string hash = 1;
+}
